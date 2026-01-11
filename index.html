@@ -1,0 +1,75 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StickFlick SMP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    body { background: #0b0f1a; color: #fff; }
+    header { padding: 20px 60px; display: flex; justify-content: space-between; align-items: center; }
+    header h1 { color: #4da3ff; }
+    nav a { color: #fff; margin-left: 20px; text-decoration: none; font-weight: 500; }
+    nav a:hover { color: #4da3ff; }.hero {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: radial-gradient(circle at top, #162447, #0b0f1a);
+}
+.hero h2 { font-size: 3rem; margin-bottom: 10px; }
+.hero p { opacity: 0.8; margin-bottom: 25px; }
+.buttons a {
+  padding: 14px 28px;
+  border-radius: 30px;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.btn-primary { background: #4da3ff; color: #000; }
+.btn-secondary { border: 2px solid #4da3ff; color: #4da3ff; }
+
+.section { padding: 80px 60px; text-align: center; }
+.section h3 { font-size: 2.2rem; margin-bottom: 20px; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; margin-top: 40px; }
+.card { background: #12182b; padding: 30px; border-radius: 18px; }
+
+footer { padding: 30px; text-align: center; background: #080c15; font-size: 0.9rem; opacity: 0.7; }
+
+  </style>
+</head>
+<body><header>
+  <h1>StickFlick</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#features">Features</a>
+    <a href="#rules">Rules</a>
+    <a href="#status">Status</a>
+    <a href="#">Discord</a>
+  </nav>
+</header><section class="hero">
+  <h2>Join the Adventure</h2>
+  <p>Build • Fight • Rule the Lifesteal SMP</p>
+  <div class="buttons">
+    <a href="#" class="btn-primary">Play Now</a>
+    <a href="#" class="btn-secondary">Join Discord</a>
+  </div>
+</section><section class="section" id="features">
+  <h3>Server Features</h3>
+  <div class="cards">
+    <div class="card">⚔️ Lifesteal PvP</div>
+    <div class="card">🌍 Java + Bedrock Support</div>
+    <div class="card">🏆 Events & End Wars</div>
+  </div>
+</section><section class="section" id="rules">
+  <h3>Server Rules</h3>
+  <p>No hacking • No abusing • Respect everyone</p>
+</section><section class="section" id="status">
+  <h3>Server Status</h3>
+  <p>🟢 Online — mc.stickflick.fun</p>
+</section><footer>
+  © 2026 StickFlick SMP • All Rights Reserved
+</footer></body>
+</html>
