@@ -2,41 +2,54 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>StickFlick SMP</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <title>StickFlick Lifesteal SMP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
-    body { background: #0b0f1a; color: #fff; }
-    header { padding: 20px 60px; display: flex; justify-content: space-between; align-items: center; }
-    header h1 { color: #4da3ff; }
-    nav a { color: #fff; margin-left: 20px; text-decoration: none; font-weight: 500; }
-    nav a:hover { color: #4da3ff; }.hero {
-  height: 85vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: radial-gradient(circle at top, #162447, #0b0f1a);
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+    body{background:#07090f;color:#fff}header{
+  position:fixed;top:0;left:0;width:100%;z-index:1000;
+  display:flex;justify-content:space-between;align-items:center;
+  padding:18px 50px;
+  background:rgba(7,9,15,.75);backdrop-filter:blur(12px)
 }
-.hero h2 { font-size: 3rem; margin-bottom: 10px; }
-.hero p { opacity: 0.8; margin-bottom: 25px; }
-.buttons a {
-  padding: 14px 28px;
-  border-radius: 30px;
-  margin: 0 10px;
-  text-decoration: none;
-  font-weight: 600;
+header h1{color:#ff3b3b;font-weight:800;letter-spacing:1px}
+nav a{color:#ddd;text-decoration:none;margin-left:25px;font-weight:500}
+nav a:hover{color:#ff3b3b}
+
+.hero{
+  height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;
+  background:radial-gradient(circle at top,#2a0f14,#07090f)
 }
-.btn-primary { background: #4da3ff; color: #000; }
-.btn-secondary { border: 2px solid #4da3ff; color: #4da3ff; }
+.hero h2{font-size:3.2rem;font-weight:800;margin-bottom:10px}
+.hero span{color:#ff3b3b}
+.hero p{opacity:.85;margin-bottom:30px;max-width:600px}
 
-.section { padding: 80px 60px; text-align: center; }
-.section h3 { font-size: 2.2rem; margin-bottom: 20px; }
-.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; margin-top: 40px; }
-.card { background: #12182b; padding: 30px; border-radius: 18px; }
+.ip-box{
+  background:#0f131f;border:1px solid #ff3b3b55;
+  padding:18px 30px;border-radius:14px;margin-bottom:25px
+}
+.ip-box p{font-size:.95rem;opacity:.8}
+.ip-box b{color:#ff3b3b}
 
-footer { padding: 30px; text-align: center; background: #080c15; font-size: 0.9rem; opacity: 0.7; }
+.buttons a{
+  display:inline-block;margin:8px;padding:14px 34px;
+  border-radius:30px;text-decoration:none;font-weight:600
+}
+.btn-play{background:#ff3b3b;color:#000}
+.btn-discord{border:2px solid #ff3b3b;color:#ff3b3b}
+
+section{padding:90px 60px;text-align:center}
+section h3{font-size:2.4rem;margin-bottom:20px}
+
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px;margin-top:50px}
+.card{
+  background:#0f131f;padding:35px;border-radius:20px;
+  border:1px solid #ffffff10
+}
+.card h4{color:#ff3b3b;margin-bottom:10px}
+
+footer{background:#05070d;padding:35px;text-align:center;opacity:.7}
 
   </style>
 </head>
@@ -45,31 +58,39 @@ footer { padding: 30px; text-align: center; background: #080c15; font-size: 0.9r
   <nav>
     <a href="#">Home</a>
     <a href="#features">Features</a>
-    <a href="#rules">Rules</a>
-    <a href="#status">Status</a>
+    <a href="#">Rules</a>
     <a href="#">Discord</a>
   </nav>
-</header><section class="hero">
-  <h2>Join the Adventure</h2>
-  <p>Build • Fight • Rule the Lifesteal SMP</p>
-  <div class="buttons">
-    <a href="#" class="btn-primary">Play Now</a>
-    <a href="#" class="btn-secondary">Join Discord</a>
+</header><div class="hero">
+  <h2>StickFlick <span>Lifesteal SMP</span></h2>
+  <p>Steal hearts. Dominate battles. Build your legacy on the ultimate Lifesteal survival experience.</p>  <div class="ip-box">
+    <p><b>Java IP:</b> mc.stickflick.fun</p>
+    <p><b>Bedrock IP:</b> mc.stickflick.fun | <b>Port:</b> 25573</p>
+  </div>  <div class="buttons">
+    <a href="#" class="btn-play">Play Now</a>
+    <a href="#" class="btn-discord">Join Discord</a>
   </div>
-</section><section class="section" id="features">
-  <h3>Server Features</h3>
-  <div class="cards">
-    <div class="card">⚔️ Lifesteal PvP</div>
-    <div class="card">🌍 Java + Bedrock Support</div>
-    <div class="card">🏆 Events & End Wars</div>
+</div><section id="features">
+  <h3>Why Play StickFlick?</h3>
+  <div class="features">
+    <div class="card">
+      <h4>🩸 Lifesteal PvP</h4>
+      <p>Every kill steals a heart. High risk, high reward combat.</p>
+    </div>
+    <div class="card">
+      <h4>🌍 Java + Bedrock</h4>
+      <p>Play together across platforms with full Geyser support.</p>
+    </div>
+    <div class="card">
+      <h4>⚔️ Competitive Events</h4>
+      <p>End Wars, KOTHs and exclusive server events.</p>
+    </div>
+    <div class="card">
+      <h4>🔒 Fair Gameplay</h4>
+      <p>Strict anti-cheat and active staff team.</p>
+    </div>
   </div>
-</section><section class="section" id="rules">
-  <h3>Server Rules</h3>
-  <p>No hacking • No abusing • Respect everyone</p>
-</section><section class="section" id="status">
-  <h3>Server Status</h3>
-  <p>🟢 Online — mc.stickflick.fun</p>
 </section><footer>
-  © 2026 StickFlick SMP • All Rights Reserved
+  © 2026 StickFlick Lifesteal SMP • All Rights Reserved
 </footer></body>
 </html>
